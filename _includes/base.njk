@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} — {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
+  <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="{% if layout == 'post.njk' %}article{% else %}website{% endif %}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
+  <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+
+  <!-- Cormorant Garamond from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
+
+  <!-- Pagefind styles (available after build) -->
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css" onerror="this.remove()">
+
+  <!-- No-flash theme init — must run before paint -->
+  <script>
+    (function() {
+      const saved = localStorage.getItem('zp-theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (saved === 'dark' || (!saved && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Scroll progress bar — only on post pages -->
+  {% if layout == 'post.njk' %}
+  <div class="scroll-progress" id="scrollProgress"></div>
+  {% endif %}
+
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="/" class="site-logo" aria-label="{{ site.name }}">
+        <span class="logo-z">Z</span><span class="logo-p">P</span>
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="/essays">Essays</a></li>
+          <li><a href="/series">Series</a></li>
+          <li><a href="/archive">Archive</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+        <button class="search-trigger" id="searchTrigger" aria-label="Search">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <circle cx="6.5" cy="6.5" r="4.5"/>
+            <line x1="10.5" y1="10.5" x2="14" y2="14"/>
+          </svg>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13.5 10.5A6 6 0 0 1 5.5 2.5a6 6 0 1 0 8 8z"/>
+          </svg>
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <circle cx="8" cy="8" r="3"/>
+            <line x1="8" y1="1" x2="8" y2="3"/>
+            <line x1="8" y1="13" x2="8" y2="15"/>
+            <line x1="1" y1="8" x2="3" y2="8"/>
+            <line x1="13" y1="8" x2="15" y2="8"/>
+            <line x1="3.05" y1="3.05" x2="4.46" y2="4.46"/>
+            <line x1="11.54" y1="11.54" x2="12.95" y2="12.95"/>
+            <line x1="12.95" y1="3.05" x2="11.54" y2="4.46"/>
+            <line x1="4.46" y1="11.54" x2="3.05" y2="12.95"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Search overlay -->
+  <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <div id="search"></div>
+        <button class="search-close" id="searchClose" aria-label="Close search">✕</button>
+      </div>
+      <div id="search-results" class="search-results"></div>
+    </div>
+  </div>
+
+  <main class="main-content">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-name">{{ site.name }}</p>
+      <p class="footer-copy">All words my own. No algorithms, no ads.</p>
+    </div>
+  </footer>
+
+  {% if layout == 'post.njk' %}
+  <script>
+    const bar = document.getElementById('scrollProgress');
+    window.addEventListener('scroll', () => {
+      const doc = document.documentElement;
+      const scrolled = doc.scrollTop;
+      const total = doc.scrollHeight - doc.clientHeight;
+      bar.style.width = (scrolled / total * 100) + '%';
+    }, { passive: true });
+  </script>
+  {% endif %}
+
+  <script>
+    const trigger = document.getElementById('searchTrigger');
+    const overlay = document.getElementById('searchOverlay');
+    const closeBtn = document.getElementById('searchClose');
+    let pagefindLoaded = false;
+
+    function openSearch() {
+      overlay.classList.add('is-open');
+      overlay.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('search-open');
+
+      if (!pagefindLoaded) {
+        pagefindLoaded = true;
+        const script = document.createElement('script');
+        script.src = '/pagefind/pagefind-ui.js';
+        script.onload = () => {
+          new PagefindUI({
+            element: '#search',
+            showImages: false,
+            resetStyles: true,
+            excerptLength: 20,
+            translations: { placeholder: 'Search essays…' }
+          });
+          // Focus input after init
+          setTimeout(() => {
+            const input = document.querySelector('.pagefind-ui__search-input');
+            if (input) input.focus();
+          }, 50);
+        };
+        document.head.appendChild(script);
+      } else {
+        setTimeout(() => {
+          const input = document.querySelector('.pagefind-ui__search-input');
+          if (input) input.focus();
+        }, 50);
+      }
+    }
+
+    function closeSearch() {
+      overlay.classList.remove('is-open');
+      overlay.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('search-open');
+    }
+
+    trigger.addEventListener('click', openSearch);
+    closeBtn.addEventListener('click', closeSearch);
+
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeSearch();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeSearch();
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        openSearch();
+      }
+    });
+  </script>
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    toggle.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('zp-theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('zp-theme', 'dark');
+      }
+    });
+  </script>
+
+</body>
+</html>

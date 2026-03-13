@@ -1,0 +1,63 @@
+---
+layout: base.njk
+---
+
+{% if series %}
+  {% set seriesAll = collections.posts | seriesPosts(series) %}
+  {% set currentPart = part %}
+  {% set prevPost = null %}
+  {% set nextPost = null %}
+  {% for p in seriesAll %}
+    {% if p.data.part === currentPart - 1 %}{% set prevPost = p %}{% endif %}
+    {% if p.data.part === currentPart + 1 %}{% set nextPost = p %}{% endif %}
+  {% endfor %}
+{% endif %}
+
+<article class="post">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="{{ date | dateISO }}">{{ date | dateDisplay }}</time>
+      <span class="meta-sep">·</span>
+      <span>{{ content | readingTime }}</span>
+    </div>
+    <h1 class="post-title">{{ title }}</h1>
+    {% if description %}
+    <p class="post-subtitle">{{ description }}</p>
+    {% endif %}
+    <div class="post-rule"></div>
+  </header>
+
+  {% if series %}
+  <p class="series-note">This essay is part {{ part }} of <a href="/series/{{ series | slugify }}/" class="series-note-link"><em>{{ series }}</em></a>.</p>
+  {% endif %}
+
+  <div class="post-body">
+    {{ content | safe }}
+  </div>
+
+  {% if series %}
+  <nav class="series-nav series-nav--bottom">
+    <span class="series-label">{{ series }} · Part {{ part }}</span>
+    <div class="series-nav-links">
+      {% if prevPost %}
+      <a href="{{ prevPost.url }}" class="series-nav-link series-nav-link--prev">
+        <span class="series-nav-direction">← Part {{ prevPost.data.part }}</span>
+        <span class="series-nav-title">{{ prevPost.data.title }}</span>
+      </a>
+      {% endif %}
+      {% if nextPost %}
+      <a href="{{ nextPost.url }}" class="series-nav-link series-nav-link--next">
+        <span class="series-nav-direction">Part {{ nextPost.data.part }} →</span>
+        <span class="series-nav-title">{{ nextPost.data.title }}</span>
+      </a>
+      {% endif %}
+    </div>
+  </nav>
+  {% endif %}
+
+  <footer class="post-footer">
+    <a href="/" class="back-link">← All essays</a>
+  </footer>
+
+</article>

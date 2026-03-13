@@ -1,0 +1,30 @@
+---
+layout: base.njk
+title: Series
+permalink: /series/
+---
+
+<section class="archive">
+
+  <div class="archive-header">
+    <h1 class="archive-title">Series</h1>
+    <span class="archive-count">{{ collections.uniqueSeries.length }} series</span>
+  </div>
+
+  <ol class="post-list">
+    {% for seriesName in collections.uniqueSeries %}
+    {% set seriesParts = collections.posts | seriesPosts(seriesName) %}
+    <li class="post-item">
+      <article>
+        <div class="post-item-meta">
+          {{ seriesParts.length }} {% if seriesParts.length == 1 %}part{% else %}parts{% endif %}
+        </div>
+        <h2 class="post-item-title">
+          <a href="/series/{{ seriesName | slugify }}/">{{ seriesName }}</a>
+        </h2>
+      </article>
+    </li>
+    {% endfor %}
+  </ol>
+
+</section>

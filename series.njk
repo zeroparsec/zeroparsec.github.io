@@ -1,0 +1,42 @@
+---
+layout: base.njk
+pagination:
+  data: collections.uniqueSeries
+  size: 1
+  alias: seriesName
+permalink: "/series/{{ seriesName | slugify }}/"
+eleventyComputed:
+  title: "{{ seriesName }}"
+---
+
+{% set seriesParts = collections.posts | seriesPosts(seriesName) %}
+
+<section class="series-page">
+
+  <div class="series-page-header">
+    <p class="series-page-eyebrow">Series</p>
+    <h1 class="series-page-title">{{ seriesName }}</h1>
+    <p class="series-page-count">{{ seriesParts.length }} parts</p>
+  </div>
+
+  <ol class="post-list series-post-list">
+    {% for post in seriesParts %}
+    <li class="post-item">
+      <article>
+        <div class="post-item-meta">
+          Part {{ post.data.part }}
+          <span class="meta-sep">·</span>
+          <time datetime="{{ post.date | dateISO }}">{{ post.date | dateDisplay }}</time>
+        </div>
+        <h2 class="post-item-title">
+          <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </h2>
+        {% if post.data.description %}
+        <p class="post-item-excerpt">{{ post.data.description }}</p>
+        {% endif %}
+      </article>
+    </li>
+    {% endfor %}
+  </ol>
+
+</section>
