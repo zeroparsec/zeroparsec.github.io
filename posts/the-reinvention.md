@@ -20,7 +20,7 @@ The answer, from the four drivers in these pages, is more complicated and more i
 
 ## I. The Wins That Rewrote the Story
 
-**Jean-Eric Vergne: Peace**
+### Jean-Eric Vergne: Peace
 
 Montreal was the beginning. The 2018 Formula E championship was the arrival.
 
@@ -34,7 +34,7 @@ Peace is not the word most drivers reach for. Vindication, yes. Relief, sometime
 
 He is still racing. In Jeddah in 2025, ahead of his 150th Formula E start, he was asked if there was anything he would do differently across the whole journey. His answer was no. The experience you gain is what really matters, he said, and what you do with it. A man at thirty-five, in his 150th race, with two championships and a decade of Formula E behind him, still here, still finding the thing worth finding. That is not a consolation arc. That is a life in motorsport that Formula 1 did not give him and could not take away.
 
-**Stoffel Vandoorne: Vindication Without Noise**
+### Stoffel Vandoorne: Vindication Without Noise
 
 Stoffel Vandoorne won the 2021/22 Formula E championship with Mercedes. Five wins across the season. A title that arrived without the dramatic comeback narrative that Vergne's story carries, because Vandoorne has never been a man who performs his own story. He won it the way he does most things — thoroughly, quietly, with a minimum of theatre.
 
@@ -46,7 +46,7 @@ His Le Mans results and his subsequent moves through the top tier of endurance r
 
 What he has said, with the most consistent and revealing generosity across every interview since leaving McLaren, is this: without those two seasons, he would never have reached the position he is in today. He means it as a statement about career trajectory — the Formula E opportunity came partly through McLaren's network. But it reads as something more personal than that. The years that damaged him also built something. The composure he maintained through the worst of it became, eventually, a genuine characteristic rather than a performance. That is the most honest kind of reinvention — not a story you choose to tell, but a person you become without entirely meaning to.
 
-**Marcus Ericsson: Joy**
+### Marcus Ericsson: Joy
 
 Detroit, June 2020. Marcus Ericsson won a race for the first time in seven years. Seven years since GP2. Five Formula 1 seasons swallowed in between. Five Formula 1 seasons with almost nothing in the points column. Three IndyCar seasons of learning what the series required and building toward something he could not yet see clearly.
 

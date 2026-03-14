@@ -30,7 +30,7 @@ What makes their cases worth examining closely is that they answered it differen
 
 ## II. Four Experiences of the Same Abyss
 
-**Jean-Eric Vergne: The Loud Fall**
+### Jean-Eric Vergne: The Loud Fall
 
 Vergne described the period after his Toro Rosso exit as a road down to hell for at least one year and a half. Sounds theatrical, but it was accurate.
 
@@ -50,7 +50,7 @@ The turn finally came. He moved to Techeetah — a team built from the ruins of 
 
 The first win came at the Montreal finale of the 2016/17 season. He called it emotional. After three years of poles that became retirements, of speed that never arrived at the right moment, of being the driver who was clearly quick and somehow still winless, something finally converted. The wilderness did not end that day. But it began, for the first time, to look like it had an exit.
 
-**Stoffel Vandoorne: The Quiet Erosion**
+### Stoffel Vandoorne: The Quiet Erosion
 
 The thing about Stoffel Vandoorne's wilderness is that it happened almost entirely in public, in front of cameras, across two Formula 1 seasons, and almost nobody noticed it happening.
 
@@ -70,7 +70,7 @@ What that cost him privately is largely reconstructed from inference, because Va
 
 The Maserati move in 2024 — which came after his Formula E championship — was described by him as a chance to hit the reset button, to work with a new group of people. A driver who had just won a world championship feeling the need to reset suggests something from the McLaren years had not fully resolved. The need for fresh starts kept returning. The quiet erosion had gone somewhere that occasional victories did not completely reach.
 
-**Marcus Ericsson: The Weight of Futility**
+### Marcus Ericsson: The Weight of Futility
 
 Marcus Ericsson's wilderness is different in character from the others because he never quite acknowledged it as one. Which is not the same as saying it wasn't there.
 
@@ -86,7 +86,7 @@ The Leclerc arrival at Sauber in 2018 accelerated the end in a way that had a pa
 
 The move to IndyCar was not, on the face of it, obviously liberating. He was going to a series the European racing establishment views as peripheral, starting again in a discipline — oval tracks, different aerodynamic philosophy, superspeedways that have killed drivers — that required him to learn things Formula 1 had never asked of him. The first three IndyCar seasons were solid rather than spectacular. The Detroit win in 2020 was his first single-seater victory in seven years. The wilderness, for Ericsson, was quieter than Vergne's and less visible than Vandoorne's. From outside, it looked like a sensible career transition managed professionally. From inside — five years of futility, then starting again, then slowly rebuilding the evidence that the speed had always been there — it was something more than that.
 
-**Jaime Alguersuari: The Deepest Cut**
+### Jaime Alguersuari: The Deepest Cut
 
 Jaime Alguersuari was twenty-one years old when Franz Tost called him.
 

@@ -36,19 +36,19 @@ The six drivers at the centre of this series arrived at their exits by different
 
 These are not six versions of the same story. But they share a structural root: the resources, relationships, and politics of the teams around them determined their fates far more than their speed did.
 
-**Sebastien Bourdais**
+### Sebastien Bourdais
 
 Start with Bourdais, because his case makes the structural argument most cleanly. He did not arrive in Formula 1 as a promising talent in need of development. He arrived as a four-time consecutive Champ Car champion — one of the most dominant sustained performances in the modern history of American open-wheel racing. His credentials were not a matter of potential. They were a matter of record.
 
 His Toro Rosso career lasted parts of two seasons before Red Bull replaced him with Buemi. No dramatic falling out, no obvious performance failure — just the programme moving on. Bourdais returned to sportscars and endurance racing, won at Daytona and Sebring well into the following decade, and has continued racing competitively into his forties. The sport lost nothing when it let him go. He simply found somewhere else willing to discover what he was worth.
 
-**Sebastien Buemi**
+### Sebastien Buemi
 
 Buemi's exit has a quality of pure arbitrariness that makes it an almost perfect illustration of how the system works. Fifty-five grands prix at Toro Rosso. Genuine pace. An understood position in the Red Bull programme. Then Daniel Ricciardo arrived, and the conversation about Buemi's future simply stopped.
 
 Four World Endurance Championship titles followed. Four Le Mans victories, between 2018 and 2022. A Formula E championship in 2016. By any serious measurement of what it means to win in motorsport, Buemi became one of the most decorated drivers of his generation. That most Formula 1 fans cannot place his name is not a comment on his achievement. It is a comment on what the sport chooses to keep in its field of vision.
 
-**Jean-Eric Vergne**
+### Jean-Eric Vergne
 
 Sometime during the 2014 Formula 1 season, Jean-Eric Vergne had a conversation with Helmut Marko that would define the rest of his career. Marko told him there was no Red Bull promotion coming. Vettel was expected to stay at the senior team. Vergne asked one question: what if Vettel leaves?
 
@@ -66,7 +66,7 @@ McLaren's own sporting director Zak Brown later acknowledged that the equipment 
 
 Through all of it, Vandoorne maintained a public composure that is either admirable or quietly heartbreaking depending on how closely you look. At Silverstone in 2018, already aware from paddock conversations that the end was near, he turned up and drove a defective new chassis until it was sent back to the factory unresolved. When the confirmation came after the summer break, he called his two years a case of right place, wrong time — a formulation generous enough toward McLaren that it must have cost something to arrive at.
 
-**Marcus Ericsson**
+### Marcus Ericsson
 
 Marcus Ericsson decided at fifteen that he was going to race in Formula 1. He spent eight years making it happen. When he arrived at Caterham in 2014, that specific goal was complete — and he has never pretended otherwise. That framing matters. It is the lens through which he has talked about everything that followed.
 
@@ -74,7 +74,7 @@ What followed immediately was the team going into administration mid-season. Cat
 
 Charles Leclerc arrived at Sauber in 2018 carrying Ferrari's full institutional backing and outqualified and outscored Ericsson from his first race weekend. By the end of the year the paddock conversations had made clear what the results were already indicating. Abu Dhabi 2018. Ninety-seven starts. Over.
 
-**Jaime Alguersuari**
+### Jaime Alguersuari
 
 Alguersuari's exit is the Red Bull pattern at its most compressed and its most damaging. He was nineteen years old when he was handed a Toro Rosso mid-season at the Hungaroring in 2009, replacing Bourdais with zero Formula 1 tests behind him. The youngest starter the sport had seen — a record that held until Verstappen. He was thrown in not because the programme had decided he was ready, but because the programme needed a body in the car and he was the body available.
 

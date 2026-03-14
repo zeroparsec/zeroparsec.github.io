@@ -13,9 +13,17 @@ layout: base.njk
   {% endfor %}
 {% endif %}
 
-<article class="post">
+<!-- TOC sidebar — populated and shown by JS only if headings exist -->
+<aside class="toc-sidebar" id="tocSidebar" aria-label="Table of contents">
+  <nav class="toc-nav">
+    <p class="toc-label">Contents</p>
+    <ol class="toc-list" id="tocList"></ol>
+  </nav>
+</aside>
 
-  <header class="post-header">
+<article class="post" id="postArticle">
+
+  <header class="post-header" id="postHeader">
     <div class="post-meta">
       <time datetime="{{ date | dateISO }}">{{ date | dateDisplay }}</time>
       <span class="meta-sep">·</span>
@@ -61,3 +69,71 @@ layout: base.njk
   </footer>
 
 </article>
+
+<script>
+(function() {
+  const sidebar = document.getElementById('tocSidebar');
+  const tocList = document.getElementById('tocList');
+  const postBody = document.querySelector('.post-body');
+
+  if (!postBody) return;
+
+  const headings = Array.from(postBody.querySelectorAll('h2, h3'));
+  if (headings.length === 0) return;
+
+  // Assign IDs
+  headings.forEach((h, i) => {
+    if (!h.id) {
+      h.id = 'section-' + i + '-' + h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-');
+    }
+  });
+
+  // Build TOC
+  headings.forEach(h => {
+    const li = document.createElement('li');
+    li.className = 'toc-item toc-item--' + h.tagName.toLowerCase();
+    const a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.className = 'toc-link';
+    a.textContent = h.textContent;
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.getElementById(h.id);
+      const navHeight = document.querySelector('.site-header').offsetHeight;
+      const targetTop = target.getBoundingClientRect().top + window.scrollY - navHeight - 24;
+      window.scrollTo({ top: targetTop, behavior: 'smooth' });
+    });
+    li.appendChild(a);
+    tocList.appendChild(li);
+  });
+
+  // Wait for fonts and layout to settle before measuring
+  window.addEventListener('load', () => {
+    const firstPara = postBody.querySelector('p:first-of-type');
+    if (firstPara) {
+      const paraTop = firstPara.getBoundingClientRect().top;
+      sidebar.style.top = paraTop + 'px';
+    } else {
+      sidebar.style.top = '8rem';
+    }
+
+    // Show sidebar
+    sidebar.classList.add('is-visible');
+  });
+
+  // Track active section
+  const links = tocList.querySelectorAll('.toc-link');
+
+  const headingObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.forEach(link => {
+          link.classList.toggle('is-active', link.getAttribute('href') === '#' + entry.target.id);
+        });
+      }
+    });
+  }, { rootMargin: '-80px 0px -60% 0px', threshold: 0 });
+
+  headings.forEach(h => headingObserver.observe(h));
+})();
+</script>
