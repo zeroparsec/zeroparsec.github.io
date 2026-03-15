@@ -39,6 +39,11 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
 
+  // Strip date prefix from filename for clean permalinks
+  eleventyConfig.addFilter("stripDate", (slug) => {
+    return slug.replace(/^\d{4}-\d{2}-\d{2}-/, '');
+  });
+
   // Get all posts in the same series, sorted by part number
   eleventyConfig.addFilter("seriesPosts", (allPosts, seriesName) => {
     return allPosts
@@ -54,13 +59,15 @@ module.exports = function(eleventyConfig) {
   });
 
   // Collections
+  const isPublished = (p) => !p.data.draft;
+
   eleventyConfig.addCollection("posts", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("posts/*.md").reverse();
+    return collectionApi.getFilteredByGlob("posts/*.md").filter(isPublished).reverse();
   });
 
   // Unique series list for generating series pages
   eleventyConfig.addCollection("uniqueSeries", function(collectionApi) {
-    const posts = collectionApi.getFilteredByGlob("posts/*.md");
+    const posts = collectionApi.getFilteredByGlob("posts/*.md").filter(isPublished);
     const seriesMap = {};
     posts.forEach(p => {
       if (!p.data.series) return;
@@ -74,7 +81,7 @@ module.exports = function(eleventyConfig) {
       .map(s => s.name);
   });
   eleventyConfig.addCollection("postsByYear", function(collectionApi) {
-    const posts = collectionApi.getFilteredByGlob("posts/*.md").reverse();
+    const posts = collectionApi.getFilteredByGlob("posts/*.md").filter(isPublished).reverse();
     const byYear = {};
     posts.forEach(post => {
       const year = new Date(post.date).getFullYear();

@@ -2,7 +2,7 @@
 layout: post.njk
 title: Something Big is Happening — Just not the way it is being told.
 description: An essay about the AI hype and doomsday predictions.
-date: 2025-03-16
+date: 2026-03-16
 tags: post
 ---
 Every few years, a piece of writing finds its moment. It arrives at the exact intersection of fear and possibility, speaks with enough authority to feel like a briefing, and travels far enough that you encounter it not by seeking it out but because someone whose judgment you trust has already been unsettled by it. Matt Shumer's essay, Something Big Is Happening, is that piece for this particular moment in artificial intelligence. Eighty million people have read it. Many of them were afraid afterward. This is not a rebuttal. It is a question the essay never thought to ask.
@@ -13,14 +13,14 @@ A YouTuber I follow, someone who has spent years making sense of technology for 
 
 That was enough to make me find it.
 
-## II. — The Alarm And How It Works
-
 The essay is titled *Something Big Is Happening*. It was written by Matt Shumer, who runs an **AI company**. It has been read more than 80 million times. The argument, stripped to its bones, is this: artificial intelligence is improving faster than almost anyone outside the industry understands, the consequences will be vast, and most people are not prepared.
 I read it in one sitting. It is well written. But somewhere around the midpoint of the article, something snagged.
 
 The claims weren't obviously false, but I couldn't shake a simpler question, one the essay never paused to answer: why is this person, with these particular financial interests, the one telling me to be afraid?
 
 It started itching that part of my brain which refuses to accept very convincing arguments on face value.
+
+## II. — The Alarm And How It Works
 
 The essay opens with a comparison to Covid. Spcifically, the moment before most people understood what was coming. That period, roughly January and February of 2020, when the news was filtering through and the dominant response was still "this seems overblown." Shumer's argument is that we are in that same moment with *artificial intelligence*. The people who understand what is actually happening are watching something enormous approach, and the rest of the world is going about its business.
 

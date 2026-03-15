@@ -8,11 +8,13 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@fontsource/cormorant-garamond": "^5.2.11",
+    "@fontsource/ibm-plex-mono": "^5.2.7",
     "pagefind": "^1.0.0"
   },
   "dependencies": {
     "markdown-it": "^14.0.0",
-    "markdown-it-footnote": "^4.0.0",
-    "markdown-it-attrs": "^4.1.6"
+    "markdown-it-attrs": "^4.1.6",
+    "markdown-it-footnote": "^4.0.0"
   }
 }
