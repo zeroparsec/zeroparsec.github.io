@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if title %}{{ title }} — {% endif %}{{ site.name }}</title>
+  <title>{% if title %}{{ title | titleCase }} — {% endif %}{{ site.name }}</title>
   <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
+  <meta property="og:title" content="{% if title %}{{ title | titleCase }}{% else %}{{ site.name }}{% endif %}">
   <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:type" content="{% if layout == 'post.njk' %}article{% else %}website{% endif %}">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
+  <meta name="twitter:title" content="{% if title %}{{ title | titleCase }}{% else %}{{ site.name }}{% endif %}">
   <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="/css/style.css">

@@ -39,6 +39,28 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
 
+  // AP-style title case
+  eleventyConfig.addFilter("titleCase", (str) => {
+    if (!str) return str;
+    const lower = new Set([
+      'a', 'an', 'the',
+      'and', 'but', 'or', 'nor', 'for', 'so', 'yet',
+      'as', 'at', 'by', 'in', 'of', 'on', 'per', 'to', 'up', 'via',
+      'from', 'into', 'with', 'over', 'than', 'through', 'between', 'off', 'near'
+    ]);
+    const cap = (w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
+    const words = str.split(' ');
+    return words.map((word, i) => {
+      // Always capitalize first and last word
+      if (i === 0 || i === words.length - 1) return cap(word);
+      // Capitalize word after a colon or em dash
+      if (words[i - 1].endsWith(':') || words[i - 1] === '—') return cap(word);
+      // Hyphenated: capitalize each part
+      if (word.includes('-')) return word.split('-').map(cap).join('-');
+      return lower.has(word.toLowerCase()) ? word.toLowerCase() : cap(word);
+    }).join(' ');
+  });
+
   // Strip date prefix from filename for clean permalinks
   eleventyConfig.addFilter("stripDate", (slug) => {
     return slug.replace(/^\d{4}-\d{2}-\d{2}-/, '');

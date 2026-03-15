@@ -20,7 +20,7 @@ permalink: /series/
           {{ seriesParts.length }} {% if seriesParts.length == 1 %}part{% else %}parts{% endif %}
         </div>
         <h2 class="post-item-title">
-          <a href="/series/{{ seriesName | slugify }}/">{{ seriesName }}</a>
+          <a href="/series/{{ seriesName | slugify }}/">{{ seriesName | titleCase }}</a>
         </h2>
       </article>
     </li>

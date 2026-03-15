@@ -15,7 +15,7 @@ eleventyComputed:
 
   <div class="series-page-header">
     <p class="series-page-eyebrow">Series</p>
-    <h1 class="series-page-title">{{ seriesName }}</h1>
+    <h1 class="series-page-title">{{ seriesName | titleCase }}</h1>
     <p class="series-page-count">{{ seriesParts.length }} parts</p>
   </div>
 
@@ -29,7 +29,7 @@ eleventyComputed:
           <time datetime="{{ post.date | dateISO }}">{{ post.date | dateDisplay }}</time>
         </div>
         <h2 class="post-item-title">
-          <a href="{{ post.url }}">{{ post.data.title }}</a>
+          <a href="{{ post.url }}">{{ post.data.title | titleCase }}</a>
         </h2>
         {% if post.data.description %}
         <p class="post-item-excerpt">{{ post.data.description }}</p>
