@@ -6,6 +6,7 @@ date: 2025-02-15
 tags: post
 series: Beyond Formula One
 part: 2
+draft: true
 ---
 
 Picture Monaco on a Formula E race weekend. The harbour glittering, the yachts stacked three deep, the city doing what it has always done — performing its own mythology back at the world. Somewhere in this backdrop, after crashing out of a race he needed to finish, Jean-Eric Vergne is at a party. He is hunched over his drink. He would rather be anywhere else on earth.

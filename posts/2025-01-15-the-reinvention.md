@@ -6,6 +6,7 @@ date: 2025-03-15
 tags: post
 series: Beyond Formula One
 part: 3
+draft: true
 ---
 
 Montreal. June 2017. The last race of the Formula E season. Jean-Eric Vergne crossed the line first and, by his own account, something released. Three years of poles that became retirements, of qualifying pace that never converted, of being the driver who was clearly quick and somehow still winless in a series he had joined from the wreckage of his Formula 1 career. 
