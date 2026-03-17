@@ -1272,12 +1272,13 @@ body.search-open {
     order: 2;
   }
 
-  /* Push nav-links to its own row below */
+  /* Push nav-links to its own row below, centered */
   .nav-links {
     order: 3;
     width: 100%;
     gap: 1.25rem;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .nav-links a {
