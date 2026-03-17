@@ -8,7 +8,7 @@ draft: false
 ---
 Every once in a while, a certain piece of writing speaks with enough authority and it travels far enough that you encounter it because someone whose judgment you trust has already been unsettled by it. I happened read one such and it made me think, deep.
 
-## I. — The Itch
+## I. The Itch
 
 A YouTuber I follow, someone who has spent years working in and teaching technology for a living, made a video about it. He'd read it, and it had unsettled him in a way that led him to question his own place in what was coming. That was enough to make me find it.
 
@@ -18,7 +18,7 @@ I read it in one sitting. It is well written. But somewhere around the midpoint,
 
 The claims weren't obviously false, but I couldn't shake a simpler question: why is this person, with these particular financial interests, the one telling me to be afraid? It caught the part of my brain that won't take a convincing argument at face value.
 
-## II. — The Alarm And How It Works
+## II. The Alarm And How It Works
 
 The essay opens with a comparison to Covid. Specifically, the moment before most people understood what was coming. That period, roughly January and February of 2020, when the news was filtering through and the dominant response was still "this seems overblown". Shumer's argument is that we are in that same moment with _artificial intelligence_. The people who understand what is actually happening are watching something enormous approach, and the rest of the world is going about its business. Covid is recent enough to carry genuine dread, and the _overblown-until-it-wasn't_ arc is one almost everyone lived through personally.
 
@@ -28,7 +28,7 @@ By the end, there is a recommendation tucked inside — _Stop using the free ver
 
 Read it once and it feels like a warning from someone who got there early. Read it twice and something else begins to emerge.
 
-## III. — California, 1848
+## III. California, 1848
 
 In January 1848, a carpenter named James Marshall found something glinting in the water at a sawmill on the American River in northern California. He was working for a man named John Sutter, and neither of them wanted the news to travel.
 
@@ -44,7 +44,7 @@ The pattern was impeccable. The people positioned closest to the need, the ones 
 
 By the mid 1850s, the surface gold was largely gone. Individual prospectors, the ones who had walked across a continent on the strength of a rumour, were being displaced by large mining companies with the capital to dig deeper. The dream had always belonged to the man with the bottle of gold dust. The mountain, belonged to whoever could afford the machinery.
 
-## IV. — The Lens Changes Shape
+## IV. The Lens Changes Shape
 
 The organisation that would become the most recognised name in artificial intelligence began as a non-profit. The reasoning was explicit that artificial general intelligence was too consequential to be left to commercial incentives. Profit motive and existential safety were incompatible. The mission required a structure that answered to humanity, not to shareholders.
 
@@ -72,7 +72,7 @@ What is harder to see is that the alarm and the financial interest now occupy th
 
 The lens has changed shape gradually, across years of fundraising rounds and capability announcements and government briefings, and they are no longer certain that what they see and what is there are the same thing.
 
-## V. — The Arithmetic They Hoped You Wouldn't Do
+## V. The Arithmetic They Hoped You Wouldn't Do
 
 The essay's final practical recommendation arrives as an afterthought to the alarm that precedes it.
 
@@ -121,7 +121,7 @@ The essay has been read more than 80 million times. The Hacker News thread has n
 
 Shumer knows more about the technical trajectory of these models than most of his 80 million readers. But knowing more about the technology is not the same thing as being a disinterested guide through it. And somewhere in the construction of this essay, the guide and the salesman quietly changed seats.
 
-## VI. — Uncharted Territory
+## VI. Uncharted Territory
 
 The alarm, if you accept it, demands a response proportional to its scale. Civilisational transformation. The end of work as we know it. A moment as significant as the industrial revolution. These claims carry the weight of urgency, the implication that delay is dangerous and that hesitation is self-destruction.
 
@@ -155,7 +155,7 @@ The picks and shovels merchants on the other hand, are doing considerably better
 
 The valley full of gold. The people who got rich were the ones selling the equipment to dig for it. The miners, the ones who had walked across a continent on the strength of a promise, were still digging.
 
-## VII. — The Math Said, "Nuke It"
+## VII. The Math Said, "Nuke It"
 
 In December 2025, an engineer at one of the most sophisticated technology operations on the planet was given a routine task. Fix a minor bug in a cost monitoring dashboard. The kind of ticket that gets closed before lunch.
 
@@ -183,7 +183,7 @@ Every time a chief executive says on an earnings call that their AI *understands
 
 Goldman Sachs, in a report that received considerably less attention than the essay urging subscription upgrades, concluded that the accumulated AI investment had contributed essentially nothing to GDP.
 
-## VIII. — The Questions Worth Asking
+## VIII. The Questions Worth Asking
 
 If the essay's central claim is true, that artificial intelligence is improving at exponential speed and will within a short window be capable of performing most knowledge work better than humans, then the advice buried inside it deserves scrutiny proportional to that claim. Subscribe to the paid tier. Adopt early. Learn the tools. Get ahead of what's coming.
 
