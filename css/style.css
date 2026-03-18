@@ -591,7 +591,7 @@ img {
   border: none;
   font-style: italic;
   font-weight: 300;
-  font-size: var(--step-1);
+  font-size: var(--step-0);
   color: var(--ink-light);
   line-height: 1.5;
 }
@@ -605,7 +605,7 @@ img {
   font-style: normal;
   font-weight: 700;
   font-family: var(--font-body);
-  margin-bottom: 0.1em;
+  margin-bottom: -0.1em;
   margin-left: -0.05em;
 }
 
