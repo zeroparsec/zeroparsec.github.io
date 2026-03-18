@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    .z { fill: #0f0d0b; }
+    .p { fill: #8b5e3c; }
+    @media (prefers-color-scheme: dark) {
+      .z { fill: #f0ebe2; }
+      .p { fill: #c49a78; }
+    }
+  </style>
+  <text x="4" y="82" font-family="Georgia, 'Times New Roman', serif" font-size="88" font-weight="700" class="z">Z</text>
+  <text x="48" y="82" font-family="Georgia, 'Times New Roman', serif" font-size="88" font-weight="400" class="p">P</text>
+</svg>
