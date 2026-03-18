@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#f7f3ec"/>
+
+  <!-- Accent bar top -->
+  <rect x="80" y="80" width="64" height="3" fill="#8b5e3c"/>
+
+  <!-- ZP logotype -->
+  <text x="80" y="180" font-family="Georgia, 'Times New Roman', serif" font-size="96" font-weight="700" fill="#0f0d0b" letter-spacing="-2">Z</text>
+  <text x="148" y="180" font-family="Georgia, 'Times New Roman', serif" font-size="96" font-weight="400" fill="#8b5e3c" letter-spacing="-2">P</text>
+
+  <!-- Site name -->
+  <text x="80" y="310" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="400" fill="#0f0d0b" letter-spacing="1">Zero Parsec</text>
+
+  <!-- Tagline -->
+  <text x="80" y="385" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-style="italic" fill="#7a7168">Essays born out of curiosity</text>
+
+  <!-- Accent bar bottom -->
+  <rect x="80" y="530" width="1040" height="1" fill="#b5ad9f"/>
+  <text x="80" y="568" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#b5ad9f" letter-spacing="3">ZEROPARSEC.COM</text>
+</svg>

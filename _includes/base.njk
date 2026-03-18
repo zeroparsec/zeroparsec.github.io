@@ -12,9 +12,14 @@
   <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:type" content="{% if layout == 'post.njk' %}article{% else %}website{% endif %}">
-  <meta name="twitter:card" content="summary">
+  {% set ogImage = image if image else "/assets/og-default.svg" %}
+  <meta property="og:image" content="{{ site.url }}{{ ogImage }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{% if title %}{{ title | titleCase }}{% else %}{{ site.name }}{% endif %}">
   <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{{ site.url }}{{ ogImage }}">
 
   <link rel="stylesheet" href="/css/style.css">
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
