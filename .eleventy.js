@@ -38,6 +38,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   // AP-style title case
   eleventyConfig.addFilter("titleCase", (str) => {

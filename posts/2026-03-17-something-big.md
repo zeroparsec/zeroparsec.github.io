@@ -217,14 +217,14 @@ One of the most prominent figures in the technology industry has been circling i
 
 > Hope we're not just the biological boot loader for digital superintelligence. Unfortunately, that is increasingly probable.
 >
-> — Elon Musk: X.com (formerly Twitter), August 3, 2014_
+> — Elon Musk: _X.com (formerly Twitter), August 3, 2014_
 {.source}
 
 Eleven years later, the hope had quietly left the sentence. The same person posted again:
 
 > As I mentioned several years ago, it increasingly appears that humanity is a biological bootloader for digital superintelligence.
 >
-> — Elon Musk: X.com (formerly Twitter), March 2025_
+> — Elon Musk: _X.com (formerly Twitter), March 2025_
 {.source}
 
 In the intervening years, he had built his own **[artificial intelligence](https://x.ai/)** company.

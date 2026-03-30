@@ -1239,6 +1239,11 @@ body.search-open {
   font-style: italic;
 }
 
+.footer-legal {
+  font-size: var(--step--1);
+  color: var(--ink-faint);
+}
+
 /* ============================================
    RESPONSIVE
    ============================================ */
