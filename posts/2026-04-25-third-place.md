@@ -2,7 +2,7 @@
 layout: post.njk
 title: The Place That Asks Nothing of You
 description: The third place is something men have always needed but are steadily losing
-date: 2026-04-13
+date: 2026-04-28
 tags: post
 draft: false
 ---
