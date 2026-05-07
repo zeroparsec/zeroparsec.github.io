@@ -20,6 +20,6 @@ Meghalaya arrived at a similar place but with a difference. The **Khasi** and **
 
 When men are structurally removed from domestic and agricultural life, women fill that space. When they fill it long enough, societies reorganise around them.
 
-The temptation is to read all of this as geography writing destiny. Climate shaped what could be grown. What could be grown shaped who worked. Who worked shaped what was inherited and what was permitted. At each step, there were other forces: colonial policy, trade, the decisions of rulers and reformers. Geography did not determine the outcome. It set the conditions under which human decisions accumulated into something that looked, centuries later, like culture.
+The temptation is to read all of this as geography writing destiny. Climate shaped what could be grown. What could be grown shaped who worked. Who worked shaped what was inherited and what was permitted. At each step, there were other forces: colonial policy, trade, the decisions of rulers and reformers. Geography just set the conditions under which human decisions accumulated into something that looked, centuries later, like culture.
 
 What we call tradition is often just an old arrangement, worn smooth by time.
