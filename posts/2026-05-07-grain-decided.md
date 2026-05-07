@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: The Grain Decided
-description: What a society thinks of its women often traces back to what it grows. India's story starts in the field.
+description: What a society thinks of its women sometimes traces back to what it grows.
 date: 2026-05-07
 tags: post
 draft: false
