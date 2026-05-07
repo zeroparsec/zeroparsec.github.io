@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: The Grain Decided Who Stayed Inside
+title: The Grain Decided
 description: What a society thinks of its women often traces back to what it grows. India's story starts in the field.
 date: 2026-05-07
 tags: post
